@@ -1,0 +1,29 @@
+
+
+<div class="container main-container">
+    <h1>Firechat</h1>
+    <hr>
+    <div class="row">
+        <div class="col-md-12 text-right" *ngIf="_cs.usuario">
+            <button (click)="salir()" type="button" class="btn btn-outline-danger" name="button">Cerrar Sesión</button>
+        </div>
+    </div>
+    <app-login *ngIf="!_cs.usuario"></app-login>
+
+    <div class="chat-window" *ngIf="_cs.usuario">
+        <app-chat></app-chat>
+    </div>
+
+</div>
+
+
+<!-- <ul>
+  <li class="text" *ngFor="let chat of chats | async">
+    {{chat.mensaje}}
+  </li>
+</ul> -->
+<!-- <ul>
+  <li class="text" *ngFor="let chat of chats | async">
+    {{chat.mensaje}}
+  </li>
+</ul> -->
