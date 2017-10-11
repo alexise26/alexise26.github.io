@@ -390,7 +390,7 @@ var NavbarComponent = (function () {
     NavbarComponent.prototype.ngOnInit = function () {
     };
     NavbarComponent.prototype.search = function (termino) {
-        this._router.navigate(['search', termino]);
+        this._router.navigate(['/search', termino]);
     };
     return NavbarComponent;
 }());
