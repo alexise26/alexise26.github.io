@@ -86,22 +86,24 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_routes__ = __webpack_require__("../../../../../src/app/app.routes.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_movies_service__ = __webpack_require__("../../../../../src/app/services/movies.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pipes_image_pipe__ = __webpack_require__("../../../../../src/app/pipes/image.pipe.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pipes_genres_pipe__ = __webpack_require__("../../../../../src/app/pipes/genres.pipe.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_home_home_component__ = __webpack_require__("../../../../../src/app/components/home/home.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_search_search_component__ = __webpack_require__("../../../../../src/app/components/search/search.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_movie_movie_component__ = __webpack_require__("../../../../../src/app/components/movie/movie.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_navbar_navbar_component__ = __webpack_require__("../../../../../src/app/components/navbar/navbar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_home_galeria_component__ = __webpack_require__("../../../../../src/app/components/home/galeria.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pipes_search_img_pipe__ = __webpack_require__("../../../../../src/app/pipes/search-img.pipe.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_movies_service__ = __webpack_require__("../../../../../src/app/services/movies.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pipes_image_pipe__ = __webpack_require__("../../../../../src/app/pipes/image.pipe.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pipes_genres_pipe__ = __webpack_require__("../../../../../src/app/pipes/genres.pipe.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_home_home_component__ = __webpack_require__("../../../../../src/app/components/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_search_search_component__ = __webpack_require__("../../../../../src/app/components/search/search.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_movie_movie_component__ = __webpack_require__("../../../../../src/app/components/movie/movie.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_navbar_navbar_component__ = __webpack_require__("../../../../../src/app/components/navbar/navbar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_home_galeria_component__ = __webpack_require__("../../../../../src/app/components/home/galeria.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pipes_search_img_pipe__ = __webpack_require__("../../../../../src/app/pipes/search-img.pipe.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -127,15 +129,15 @@ var AppModule = (function () {
 AppModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["M" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_8__components_home_home_component__["a" /* HomeComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__components_search_search_component__["a" /* SearchComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__components_movie_movie_component__["a" /* MovieComponent */],
-            __WEBPACK_IMPORTED_MODULE_11__components_navbar_navbar_component__["a" /* NavbarComponent */],
-            __WEBPACK_IMPORTED_MODULE_5__pipes_image_pipe__["a" /* ImagePipe */],
-            __WEBPACK_IMPORTED_MODULE_6__pipes_genres_pipe__["a" /* GenresPipe */],
-            __WEBPACK_IMPORTED_MODULE_12__components_home_galeria_component__["a" /* GaleriaComponent */],
-            __WEBPACK_IMPORTED_MODULE_13__pipes_search_img_pipe__["a" /* SearchImgPipe */]
+            __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__components_home_home_component__["a" /* HomeComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__components_search_search_component__["a" /* SearchComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__components_movie_movie_component__["a" /* MovieComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__components_navbar_navbar_component__["a" /* NavbarComponent */],
+            __WEBPACK_IMPORTED_MODULE_6__pipes_image_pipe__["a" /* ImagePipe */],
+            __WEBPACK_IMPORTED_MODULE_7__pipes_genres_pipe__["a" /* GenresPipe */],
+            __WEBPACK_IMPORTED_MODULE_13__components_home_galeria_component__["a" /* GaleriaComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__pipes_search_img_pipe__["a" /* SearchImgPipe */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -144,9 +146,10 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_3__app_routes__["a" /* APP_ROUTING */]
         ],
         providers: [
-            __WEBPACK_IMPORTED_MODULE_4__services_movies_service__["a" /* MoviesService */]
+            __WEBPACK_IMPORTED_MODULE_5__services_movies_service__["a" /* MoviesService */],
+            { provide: __WEBPACK_IMPORTED_MODULE_4__angular_common__["g" /* LocationStrategy */], useClass: __WEBPACK_IMPORTED_MODULE_4__angular_common__["d" /* HashLocationStrategy */] }
         ],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */]]
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
